@@ -8,7 +8,7 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
 
 #### Após realizar clone, execute os seguintes passos:
 
-1. ##### Crie um arquivo  `.env` com as informações abaixo.
+1. ##### Crie um arquivo  `.env` com as informações abaixo (substitua as credencias do banco de acordo com a do banco que vai ser conectado).
 ```bash
     HOST=127.0.0.1
     PORT=3333
