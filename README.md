@@ -7,9 +7,9 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
 
 ## Setup
 
-#### Após realizar clone, execute os seguintes passos:
+### Após realizar clone, execute os seguintes passos:
 
-1. ##### Crie um arquivo  `.env` com as informações abaixo. 
+1. #### Crie um arquivo  `.env` com as informações abaixo. 
 
 *Observação:* (substitua as credencias do banco de acordo com a do banco que vai ser conectado).
 ```bash
@@ -29,15 +29,15 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
     HASH_DRIVER=bcrypt
 ```
 
-2. ##### Execute o seguinte comando para executar migrações de inicialização
+2. #### Execute o seguinte comando para executar migrações de inicialização
 
-Esse comando cria todas as tabelas necessárias em suas base de dados.
+Esse comando cria todas as tabelas necessárias em sua base de dados.
 
 ```js
 adonis migration:run
 ```
 
-3. ##### Execute o seguinte comando para executar os seeds
+3. #### Execute o seguinte comando para executar os seeds
 Esse comando popula as tabelas:
 1. type_payments
 2. status_deliveries
