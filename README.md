@@ -1,29 +1,40 @@
-# Adonis API application
+# Api DeliveryList
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Projeto produzido com a utilização do framework `Adonis.js`.
+Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
 
 ## Setup
 
-Use the adonis command to install the blueprint
+#### Após realizar clone, execute os seguintes passos:
 
+1. ##### Crie um arquivo  `.env`
 ```bash
-adonis new yardstick --api-only
+    HOST=127.0.0.1
+    PORT=3333
+    NODE_ENV=development
+    APP_NAME=AdonisJs
+    APP_URL=http://${HOST}:${PORT}
+    CACHE_VIEWS=false
+    APP_KEY=xtj7a9oitvTiBKhJhr6mKj7dfNdRjoMt
+    DB_CONNECTION=pg
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_USER=usuario
+    DB_PASSWORD=senha
+    DB_DATABASE=delivery_list
+    HASH_DRIVER=bcrypt
 ```
 
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
+1. ##### Execute o seguinte comando para executar migrações de inicialização
 
 ```js
 adonis migration:run
 ```
-"# Api_Delivery_List" 
+
+1. ##### Execute o seguinte comando para executar seeds
+
+```js
+adonis seed
+```
+
