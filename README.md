@@ -34,15 +34,15 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
 ```js
 adonis migration:run
 ```
-Esse comando cria todas as tabelas necessárias em sua base de dados.
+*Esse comando cria todas as tabelas necessárias em sua base de dados.*
 
 3. #### Execute o seguinte comando para executar os seeds
 
 ```js
 adonis seed
 ```
-Esse comando popula as tabelas:
-1. type_payments
-2. status_deliveries
-3. status_receipts
+*Esse comando popula as tabelas:*
+*1. type_payments*
+*2. status_deliveries*
+*3. status_receipts*
 
