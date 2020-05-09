@@ -7,6 +7,7 @@ Project produced using the `Adonis.js` framewok
 This Api aims to exclusively serve the DeliveryList application, it composes login, crud and sockect methods.
 
 ## Setup
+*Note:* To consume the API locally, it is necessary to have [Adonis.js](https://adonisjs.com/docs/4.1/installation) installed.
 
 ### Perform the following steps:
 
