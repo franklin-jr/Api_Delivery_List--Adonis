@@ -5,7 +5,7 @@
 const Route = use('Route')
 
 Route.group(() => {
-    Route.post('login', 'AuthController.login').as('auth.login')
+    Route.post('login', 'AuthController.login').as('auth.login').validator('Auth/Login')
     //Route.get('decode', 'AuthController.decode').as('auth.decode')
 })
 .prefix('v1/auth')

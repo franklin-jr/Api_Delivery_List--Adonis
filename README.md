@@ -1,6 +1,6 @@
 # Api DeliveryList
 
-Project produced using the `Adonis.js` framewok
+Project developd using the `Adonis.js` framewok
 
 ## Objective
 
@@ -43,5 +43,5 @@ adonis migration:run
 ```js
 adonis seed
 ```
-*This command populates the tables: type_payments, status_deliveries, status_receipts e users*
+*This command populates the tables: type_payments, status_deliveries, status_receipts and users*
 

@@ -1,5 +1,9 @@
 'use strict'
 
+const Database = use('Database')
+const User = use('App/Models/User')
+const Role = use('Role')
+
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -20,17 +24,6 @@ class UserController {
   async index ({ request, response, view }) {
   }
 
-  /**
-   * Render a form to be used for creating a new user.
-   * GET users/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async create ({ request, response, view }) {
-  }
 
   /**
    * Create/save a new user.
@@ -41,6 +34,19 @@ class UserController {
    * @param {Response} ctx.response
    */
   async store ({ request, response }) {
+    const {name, username, email, password} = request.all()
+
+    const txt = await Database.beginTransaction()
+    try {    
+        const cliente = await User.create({name, username, email, password}, txt)
+        const role = await Role.findBy('slug', 'entrg')
+        await cliente.roles().attach([role.id], null, txt)
+        await txt.commit()
+        return response.status(201).send({mensagem: 'User cadastrado com sucesso'})
+    } catch (error) {
+        await txt.rollback()
+        return response.status(404).send({erro: error, mensagem: 'User não cadastrado'})
+    } 
   }
 
   /**
