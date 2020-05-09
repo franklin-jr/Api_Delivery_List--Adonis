@@ -41,8 +41,5 @@ adonis migration:run
 ```js
 adonis seed
 ```
-*Esse comando popula as tabelas:*
-*1. type_payments*
-*2. status_deliveries*
-*3. status_receipts*
+*Este comando popula as tabelas: type_payments, status_deliveries e status_receipts*
 
