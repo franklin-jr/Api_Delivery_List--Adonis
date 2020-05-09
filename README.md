@@ -8,7 +8,7 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
 
 #### Após realizar clone, execute os seguintes passos:
 
-1. ##### Crie um arquivo  `.env`
+1. ##### Crie um arquivo  `.env` com a informações abaixo.
 ```bash
     HOST=127.0.0.1
     PORT=3333
