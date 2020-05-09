@@ -9,7 +9,7 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
 
 ### Após realizar clone, execute os seguintes passos:
 
-1. #### Crie um arquivo  `.env` com as informações abaixo. 
+1. #### Crie o arquivo  `.env` com as informações abaixo. 
 
 *Observação:* (substitua as credencias do banco de acordo com a do banco que vai ser conectado).
 ```bash
@@ -41,5 +41,5 @@ adonis migration:run
 ```js
 adonis seed
 ```
-*Este comando popula as tabelas: type_payments, status_deliveries e status_receipts*
+*Este comando popula as tabelas: type_payments, status_deliveries, status_receipts e users*
 
