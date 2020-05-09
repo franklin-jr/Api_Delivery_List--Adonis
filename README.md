@@ -1,17 +1,18 @@
 # Api DeliveryList
 
-Projeto produzido com a utilização do framework `Adonis.js`.
+Project produced using the `Adonis.js` framewok
 
-Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
+## Objective
 
+This Api aims to exclusively serve the DeliveryList application, it composes login, crud and sockect methods.
 
 ## Setup
 
-### Após realizar clone, execute os seguintes passos:
+### Perform the following steps:
 
-1. #### Crie o arquivo  `.env` com as informações abaixo. 
+1. #### Create the `.env` file with the information below. 
 
-*Observação:* (substitua as credencias do banco de acordo com a do banco que vai ser conectado).
+*Note:* (replace connection credentials according to the database to be connected).
 ```bash
     HOST=127.0.0.1
     PORT=3333
@@ -29,17 +30,17 @@ Está Api tem como intuito servir exclusivamente a aplicação DeliveryList
     HASH_DRIVER=bcrypt
 ```
 
-2. #### Execute o seguinte comando para executar migrações de inicialização
+2. #### Run the following command to perform boot migrations
 
 ```js
 adonis migration:run
 ```
-*Esse comando cria todas as tabelas necessárias em sua base de dados.*
+*This command creates all the necessary tables in your database.*
 
-3. #### Execute o seguinte comando para executar os seeds
+3. #### Run the following command to run the seeds
 
 ```js
 adonis seed
 ```
-*Este comando popula as tabelas: type_payments, status_deliveries, status_receipts e users*
+*This command populates the tables: type_payments, status_deliveries, status_receipts e users*
 
